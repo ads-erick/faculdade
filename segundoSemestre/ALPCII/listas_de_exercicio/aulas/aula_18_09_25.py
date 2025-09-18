@@ -46,3 +46,13 @@ class Pessoa():
         print(f"Idade: {self.__idade}")
         print(f"e-mail: {self.__email}")
         print(f"celular: {self.__celular}")
+
+nome = input("Digite o nome da pessoa: ")
+idade = int(input("Digite a idade da pessoa: "))
+email = input("Digite o e-mail da pessoa: ")
+celular = input("Digite o nr do celular da pessoa: ")
+
+# Criando o objeto pessoal
+pessoa1 = Pessoa(nome, idade, email, celular)
+pessoa1.nome = nome
+pessoa1.idade = idade
