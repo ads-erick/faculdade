@@ -56,4 +56,4 @@ celular = input("Digite o nr do celular da pessoa: ")
 pessoa1 = Pessoa(nome, idade, email, celular)
 pessoa1.nome = nome
 pessoa1.idade = idade
- 
+pessoa1.exibir_dados()
