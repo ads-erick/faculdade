@@ -1,16 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
-@app.route("/")
+nomes = []
+@app.route("/", methods=["GET", "POST"])
 def main():
-    return render_template("index.html")
-
-@app.route("/sobre")
-def sobre():
-    return render_template("sobre.html")
-
-@app.route("/contato")
-def contato():
-    return render_template("contatos.html")
+    if request.form.method == "POST":
+        if request.form.get("nome"):
+            nomes.append(request.fomr.get("nome"))
+    return render_template("index.html", nomes=nomes)
 
 if __name__ == "__main__":
     app.run(debug=True)

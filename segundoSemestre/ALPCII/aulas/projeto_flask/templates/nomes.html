@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de nomes em uma lista</title>
+</head>
+<body>
+    <h2>Lista de nomes</h2>
+    <ol>
+        {% for nome in nomes %}
+            <li>{{nome}}</li>
+        {% endfor %}
+    </ol>
+    <form action="{{url_for('main')}}"> method="POST
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Digite um nome">
+        <button>Adicionar</button>
+    </form>
+</body>
+</html>
