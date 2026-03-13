@@ -1,12 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Retangulo r1 = new Retangulo();
-        r1.altura = 10;
-        r1.largura = 20;
+        Retangulo retangulo = new Retangulo();
 
-        Retangulo r2 = new Retangulo(5.0, 5.0);
+        Retangulo retangulo2 = new Retangulo(5,5);
 
-        System.out.println(r1);
-        System.out.println(r2);
+        System.out.println(retangulo2);
+        System.out.println(retangulo2.getAltura());
     }
 }

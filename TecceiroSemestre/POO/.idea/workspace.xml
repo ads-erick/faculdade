@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/20260313/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20260313/src/Retangulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20260313/src/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20261303/20261303.iml" beforeDir="false" afterPath="$PROJECT_DIR$/20260313/20260313.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20260313/20260313.iml" beforeDir="false" afterPath="$PROJECT_DIR$/20260313.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20260313/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/20260313/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20260313/src/Retangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/20260313/src/Retangulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,13 @@
     "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/20260313/aula" />
+      <recent name="$PROJECT_DIR$/20260313" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="" />
