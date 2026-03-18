@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula03/q03/InsereNumero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula03/SomaInteiroWhile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroWhile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroFor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/q02/SomaInteiroFor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroWhile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/q02/SomaInteiroWhile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +45,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Caracter.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ComparaTexto.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Divisao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Inteiro.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParImpar.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomaInteiro.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomaNumeros.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Teste.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/erick/Documentos/GitHub/faculdade/TecceiroSemestre/POO&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Caracter.executor": "Run",
+    "Application.ComparaTexto.executor": "Run",
+    "Application.Divisao.executor": "Run",
+    "Application.InsereNumero.executor": "Run",
+    "Application.Inteiro.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ParImpar.executor": "Run",
+    "Application.SomaInteiro.executor": "Run",
+    "Application.SomaInteiroFor.executor": "Run",
+    "Application.SomaNumeros.executor": "Run",
+    "Application.Teste.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/erick/Documentos/GitHub/faculdade/TecceiroSemestre/POO",
+    "settings.editor.selected.configurable": "Errors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
