@@ -2,7 +2,7 @@
 //nu´mero 1 at´e o valor informado pelo usu´ario. Apresente o resultado em
 //tela.
 
-package aula03;
+package aula03.qo2;
 
 import java.util.Scanner;
 
