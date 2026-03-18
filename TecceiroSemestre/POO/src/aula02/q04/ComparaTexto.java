@@ -11,18 +11,18 @@ public class ComparaTexto {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Comparação de textos");
+        System.out.print("Comparação de textos");
 
-        System.out.println("Insira o primeiro texto:");
+        System.out.print("Insira o primeiro texto: ");
         String text1 = scanner.nextLine();
 
-        System.out.println("Insira a segunda frase:");
+        System.out.print("Insira a segunda frase: ");
         String text2 = scanner.nextLine();
 
         if (text1.equals(text2)) {
-            System.out.println("Os textos são iguais.");
+            System.out.print("Os textos são iguais.");
         } else {
-            System.out.println("Os textos não são iguais.");
+            System.out.print("Os textos não são iguais.");
         }
 
         scanner.close();
