@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula03/q03/InsereNumero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula03/q04/CalculcaMedia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroFor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/q02/SomaInteiroFor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula03/qo2/SomaInteiroWhile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/q02/SomaInteiroWhile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CalculcaMedia.executor": "Run",
     "Application.Caracter.executor": "Run",
     "Application.ComparaTexto.executor": "Run",
     "Application.Divisao.executor": "Run",
