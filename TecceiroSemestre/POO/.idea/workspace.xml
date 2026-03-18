@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula03/q07/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula03/q08/SorteiaNumero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,7 @@
     "Application.SomaInteiro.executor": "Run",
     "Application.SomaInteiroFor.executor": "Run",
     "Application.SomaNumeros.executor": "Run",
+    "Application.SorteiaNumero.executor": "Run",
     "Application.Teste.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
