@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula08/exercicios/ex11/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula08/exercicios/ex11/Pergunta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula08/exercicios/ex11/Questionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/20260313/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/20260313/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/20260313/Retangulo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +45,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CalculcaMedia.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Caracter.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ComparaTexto.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Divisao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImprimeTabuada.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImprimeTabuada2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InsereNumero.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Inteiro.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParImpar.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomaInteiro.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomaInteiroFor.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomaNumeros.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SorteiaNumero.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Teste.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/erick/Documentos/GitHub/faculdade/TerceiroSemestre/POO&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CalculcaMedia.executor": "Run",
+    "Application.Caracter.executor": "Run",
+    "Application.ComparaTexto.executor": "Run",
+    "Application.Divisao.executor": "Run",
+    "Application.ImprimeTabuada.executor": "Run",
+    "Application.ImprimeTabuada2.executor": "Run",
+    "Application.InsereNumero.executor": "Run",
+    "Application.Inteiro.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ParImpar.executor": "Run",
+    "Application.SomaInteiro.executor": "Run",
+    "Application.SomaInteiroFor.executor": "Run",
+    "Application.SomaNumeros.executor": "Run",
+    "Application.SorteiaNumero.executor": "Run",
+    "Application.Teste.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/erick/Documentos/GitHub/RocketSeat/Java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
