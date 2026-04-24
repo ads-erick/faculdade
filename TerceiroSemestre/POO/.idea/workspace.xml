@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1beeef63-d1d3-45d7-9480-b2c68627441d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula13/exercicios/ex01/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula13/exercicios/ex01/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula13/exercicios/ex01/Lider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula13/exercicios/ex01/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20260313/aula13/revisaoaula/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20260313/aula13/revisaoaula/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20260313/aula13/revisaoaula/Gato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20260313/aula13/revisaoaula/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula13/revisaoaula/Gato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula13/revisaoaula/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +67,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/erick/Documentos/GitHub/faculdade/TerceiroSemestre/POO",
+    "last_opened_file_path": "/home/erick/Documentos/GitHub/RocketSeat/Java",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
