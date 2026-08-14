@@ -1,12 +1,15 @@
-package br.edu.univille.poo;
+package br.edu.univille.poo.entity;
 
 // Entidade/ Modelo / Entity/Model
-// Pessoa -> Mapeia a tabela pessoa
+// Pessoa -> Mapeia a tabela Pessoa
 public class Pessoa {
     private int id;
     private String nome;
     private String sobrenome;
     private int idade;
+
+    public Pessoa() {
+    }
 
     public Pessoa(int id, String nome, String sobrenome, int idade) {
         this.id = id;
@@ -45,5 +48,15 @@ public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", idade=" + idade +
+                '}';
     }
 }
