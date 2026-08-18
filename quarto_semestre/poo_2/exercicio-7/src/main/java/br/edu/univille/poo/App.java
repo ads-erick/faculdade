@@ -9,8 +9,9 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         TarefaDAO dao = new TarefaDAO();
-        List<Tarefa> tarefasAltas = dao.findByPrioridade(Prioridade.ALTO);
-        for (Tarefa t : tarefasAltas) {
+
+        List<Tarefa> naoFinalizadas = dao.findByFeito(false);
+        for (Tarefa t : naoFinalizadas) {
             System.out.println(t);
         }
     }

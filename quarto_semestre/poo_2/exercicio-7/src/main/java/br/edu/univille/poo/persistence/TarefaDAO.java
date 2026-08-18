@@ -63,4 +63,28 @@ public class TarefaDAO extends BaseDAO{
         return lista;
     }
 
+    public List<Tarefa> findByFeito(boolean feito) {
+        List<Tarefa> lista = new ArrayList<>();
+        String sql = "SELECT * FROM tarefa WHERE feito = ?";
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setBoolean(1, feito);
+            ResultSet rs = pre.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String descricao = rs.getString("descricao");
+                String prioridadeStr = rs.getString("prioridade");
+                Prioridade prioridade = Prioridade.valueOf(prioridadeStr.toUpperCase());
+                boolean feitoColuna = rs.getBoolean("feito");
+                LocalDateTime prazoFinal = rs.getTimestamp("prazo_final").toLocalDateTime();
+
+                Tarefa tarefa = new Tarefa(id, descricao, prioridade, feitoColuna, prazoFinal);
+                lista.add(tarefa);
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao consultar as tarefas em aberto.");
+            e.printStackTrace();
+        }
+        return lista;
+    }
 }
