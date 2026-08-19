@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -89,7 +90,7 @@ public class TarefaDAO extends BaseDAO {
         return lista;
     }
 
-    public List<Tarefa> findByAtraso() {
+    public List<Tarefa> findAtrasadas() {
         List<Tarefa> lista = new ArrayList<>();
         String sql = "SELECT * FROM tarefa WHERE feito = ? AND prazo_final < ?";
         try (Connection con = con();
@@ -110,6 +111,34 @@ public class TarefaDAO extends BaseDAO {
             }
         } catch (Exception e) {
             System.out.println("Erro ao consultar as tarefas em atraso.");
+            e.printStackTrace();
+        }
+        return lista;
+    }
+
+    public List<Tarefa> findAbertasHoje() {
+        List<Tarefa> lista = new ArrayList<>();
+        String sql = "SELECT * FROM tarefa WHERE feito = ? AND prazo_final >= ? AND prazo_final <= ?";
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setBoolean(1, false);
+            LocalDate hoje = LocalDate.now();
+            pre.setTimestamp(2, Timestamp.valueOf(hoje.atStartOfDay()));
+            pre.setTimestamp(3, Timestamp.valueOf(hoje.atTime(23, 59, 59)));
+            ResultSet rs = pre.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String descricao = rs.getString("descricao");
+                String prioridadeStr = rs.getString("prioridade");
+                Prioridade prioridade = Prioridade.valueOf(prioridadeStr.toUpperCase());
+                boolean feitoColuna = rs.getBoolean("feito");
+                LocalDateTime prazoFinal = rs.getTimestamp("prazo_final").toLocalDateTime();
+
+                Tarefa tarefa = new Tarefa(id, descricao, prioridade, feitoColuna, prazoFinal);
+                lista.add(tarefa);
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao consultar as tarefas abertas do dia.");
             e.printStackTrace();
         }
         return lista;

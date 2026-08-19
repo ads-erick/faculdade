@@ -9,8 +9,8 @@ public class App {
     public static void main(String[] args) {
         TarefaDAO dao = new TarefaDAO();
 
-        List<Tarefa> atrasadas = dao.findByAtraso();
-        for (Tarefa t : atrasadas) {
+        List<Tarefa> abertasHoje = dao.findAbertasHoje();
+        for (Tarefa t : abertasHoje) {
             System.out.println(t);
         }
     }
