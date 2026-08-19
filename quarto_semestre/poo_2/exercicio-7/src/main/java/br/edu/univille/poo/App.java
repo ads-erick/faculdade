@@ -9,7 +9,9 @@ public class App {
     public static void main(String[] args) {
         TarefaDAO dao = new TarefaDAO();
 
-        Optional<Tarefa> resultado = dao.findById(100);
+        dao.finalizarTarefaById(3);
+
+        Optional<Tarefa> resultado = dao.findById(3);
         if (resultado.isPresent()) {
             System.out.println(resultado.get());
         } else {

@@ -169,4 +169,17 @@ public class TarefaDAO extends BaseDAO {
         return Optional.empty();
     }
 
+    public void finalizarTarefaById(int id) {
+        String sql = "UPDATE tarefa SET feito = ? WHERE id = ?";
+        try(Connection con = con();
+        PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setBoolean(1, true);
+            pre.setInt(2, id);
+            pre.execute();
+        } catch (Exception e) {
+            System.out.println("Erro ao atualizar a tarefa pelo id " + id + ".");
+            e.printStackTrace();
+        }
+    }
+
 }
