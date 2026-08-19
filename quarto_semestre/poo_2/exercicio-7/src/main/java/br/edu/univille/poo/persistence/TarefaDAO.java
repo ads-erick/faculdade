@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class TarefaDAO extends BaseDAO {
 
@@ -142,6 +143,30 @@ public class TarefaDAO extends BaseDAO {
             e.printStackTrace();
         }
         return lista;
+    }
+
+    public Optional<Tarefa> findById(int id) {
+        String sql = "SELECT * FROM tarefa WHERE id = ?";
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setInt(1, id);
+            ResultSet rs = pre.executeQuery();
+            if (rs.next()) {
+                int idTarefa = rs.getInt("id");
+                String descricao = rs.getString("descricao");
+                String prioridadeStr = rs.getString("prioridade");
+                Prioridade prioridade = Prioridade.valueOf(prioridadeStr.toUpperCase());
+                boolean feitoColuna = rs.getBoolean("feito");
+                LocalDateTime prazoFinal = rs.getTimestamp("prazo_final").toLocalDateTime();
+
+                Tarefa tarefa = new Tarefa(idTarefa, descricao, prioridade, feitoColuna, prazoFinal);
+                return Optional.of(tarefa);
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao consultar a tarefa pelo id " + id + ".");
+            e.printStackTrace();
+        }
+        return Optional.empty();
     }
 
 }
