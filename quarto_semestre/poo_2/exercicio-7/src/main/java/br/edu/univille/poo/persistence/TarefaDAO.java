@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 public class TarefaDAO extends BaseDAO {
@@ -171,13 +172,29 @@ public class TarefaDAO extends BaseDAO {
 
     public void finalizarTarefaById(int id) {
         String sql = "UPDATE tarefa SET feito = ? WHERE id = ?";
-        try(Connection con = con();
-        PreparedStatement pre = con.prepareStatement(sql)) {
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
             pre.setBoolean(1, true);
             pre.setInt(2, id);
             pre.execute();
         } catch (Exception e) {
             System.out.println("Erro ao atualizar a tarefa pelo id " + id + ".");
+            e.printStackTrace();
+        }
+    }
+
+    public void atualizarTarefa(Tarefa tarefa) {
+        String sql = "UPDATE tarefa SET descricao = ?, prioridade = ?, feito = ?, prazo_final = ? WHERE id = ?";
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setString(1, tarefa.getDescricao());
+            pre.setString(2, tarefa.getPrioridade().toString().toLowerCase());
+            pre.setBoolean(3, tarefa.isFeito());
+            pre.setTimestamp(4, Timestamp.valueOf(tarefa.getPrazoFinal()));
+            pre.setInt(5, tarefa.getId());
+            pre.execute();
+        } catch (Exception e) {
+            System.out.println("Erro ao atualizar a tarefa pelo id " + tarefa.getId() + ".");
             e.printStackTrace();
         }
     }
