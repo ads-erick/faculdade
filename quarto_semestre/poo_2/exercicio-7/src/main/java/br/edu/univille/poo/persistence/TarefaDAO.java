@@ -199,4 +199,16 @@ public class TarefaDAO extends BaseDAO {
         }
     }
 
+    public void deletarTarefaById(int id) {
+        String sql = "DELETE FROM tarefa WHERE id = ?";
+        try (Connection con = con();
+             PreparedStatement pre = con.prepareStatement(sql)) {
+            pre.setInt(1, id);
+            pre.execute();
+        } catch (Exception e) {
+            System.out.println("Erro ao deletar a tarefa pelo id " + id + ".");
+            e.printStackTrace();
+        }
+    }
+
 }
