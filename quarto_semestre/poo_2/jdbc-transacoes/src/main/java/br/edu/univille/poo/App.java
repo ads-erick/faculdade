@@ -3,14 +3,55 @@ package br.edu.univille.poo;
 import br.edu.univille.poo.entity.Prioridade;
 import br.edu.univille.poo.entity.Tarefa;
 import br.edu.univille.poo.persistence.TarefaDAO;
+import br.edu.univille.poo.persistence.ConnectionFactory;
+import java.sql.SQLException;
 
+import java.sql.Connection;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
         TarefaDAO dao = new TarefaDAO();
+
+        Scanner scanner = new Scanner(System.in);
+
+        try (Connection con = ConnectionFactory.getInstance().get()) {
+            con.setAutoCommit(false);
+
+            Tarefa novaTarefa = new Tarefa(
+                    0,
+                    "teste",
+                    Prioridade.MEDIO,
+                    false,
+                    LocalDateTime.now().plusDays(1)
+            );
+
+            dao.inserir(novaTarefa, con);
+
+            System.out.println("-- Tarefas antes da decisão --");
+            for (Tarefa tarefa : dao.findAll(con)) {
+                System.out.println(tarefa);
+            }
+
+            System.out.println("Deseja salvar as alterações? [s/n]: ");
+            String resposta = scanner.nextLine();
+
+            if (resposta.equalsIgnoreCase("s")) {
+                con.commit();
+                System.out.println("Alterações salvas");
+            } else {
+                con.rollback();
+                System.out.println("Alterações desfeitas.");
+            }
+
+        } catch (SQLException e) {
+            System.out.println("Erro ao conectar ao banco.");
+            e.printStackTrace();
+        }
 
         System.out.println("-- Todas as tarefas --");
         for (Tarefa t : dao.findAll()) {
@@ -45,24 +86,5 @@ public class App {
             System.out.println("Tarefa não encontrada.");
         }
 
-        System.out.println("\n-- Finalizar tarefa pelo id (1) --");
-        dao.finalizarTarefaById(1);
-        System.out.println(dao.findById(1).orElse(null));
-
-        System.out.println("\n-- Atualizar tarefa pelo id (1) --");
-        Tarefa tarefaAtualizada = new Tarefa(
-                1,
-                "Estudar para a prova de POO - revisado",
-                Prioridade.MEDIO,
-                false,
-                LocalDateTime.of(2026, 8, 25, 18, 0)
-        );
-        dao.atualizarTarefa(tarefaAtualizada);
-        System.out.println(dao.findById(1).orElse(null));
-
-        System.out.println("\n-- Deletar tarefa pelo id (2) --");
-        dao.deletarTarefaById(2);
-        Optional<Tarefa> tarefaDeletada = dao.findById(2);
-        System.out.println(tarefaDeletada.isPresent() ? tarefaDeletada.get() : "Tarefa não encontrada (deletada com sucesso).");
     }
 }

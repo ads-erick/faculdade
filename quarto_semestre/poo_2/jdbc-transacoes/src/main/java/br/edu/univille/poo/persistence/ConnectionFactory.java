@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-class ConnectionFactory {
+public class ConnectionFactory {
     private static ConnectionFactory instance;
 
     private String url;
