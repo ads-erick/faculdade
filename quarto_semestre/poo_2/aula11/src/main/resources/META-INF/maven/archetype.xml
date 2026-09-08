@@ -1,0 +1,9 @@
+<archetype>
+  <id>aula11</id>
+  <sources>
+    <source>src/main/java/br.edu.univille.App.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/AppTest.java</source>
+  </testSources>
+</archetype>
